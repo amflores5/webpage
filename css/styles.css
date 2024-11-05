@@ -59,11 +59,15 @@ footer p{
     margin:0;
     padding:0;
 }
-.navbar .logo{
+.logo{
     font-size: 1.5rem;
     color: var(--accent-color); /* Matches accent color */
     font-weight: bold;
     margin: 0;
+}
+.logo a{
+    color:inherit;
+    text-decoration: none;
 }
 .navbar nav ul {
     list-style: none;
@@ -243,5 +247,120 @@ footer p{
     .social-media a {
         font-size: 1.2rem; /* Slightly smaller icons on mobile */
     }
+}
+/*About Section Formatting*/
+/* About Section Styles */
+.about-section {
+    position: relative;
+    padding: 120px 20px 60px;
+    background: linear-gradient(135deg, var(--primary-color), #4b007f, var(--highlight-color));
+    color: #f0f0f0;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* General Circle Styling */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05); /* Light, subtle color */
+    animation: float 15s infinite ease-in-out;
+    z-index: 0; /* Keep circles behind content */
+}
+
+/* Specific Circles with Different Sizes and Positions */
+.circle1 {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 20%;
+    animation-duration: 12s; /* Varying speed */
+}
+
+.circle2 {
+    width: 150px;
+    height: 150px;
+    top: 30%;
+    left: 70%;
+    animation-duration: 18s;
+}
+
+.circle3 {
+    width: 120px;
+    height: 120px;
+    bottom: 15%;
+    left: 10%;
+    animation-duration: 20s;
+}
+
+/* Original Circles */
+.about-section::before,
+.about-section::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    animation: float 10s infinite ease-in-out;
+}
+
+.about-section::before {
+    width: 120px;
+    height: 120px;
+    top: 0;
+    left: -60px;
+}
+
+.about-section::after {
+    width: 180px;
+    height: 180px;
+    bottom: 0;
+    right: -60px;
+}
+
+/* Float Animation */
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(10px, -20px); /* Diagonal movement */
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-section h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Headshot Image Styling */
+.headshot {
+    width: 400px; /* Adjust size as needed */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 50%; /* Circular crop */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 4px solid var(--accent-color); /* Optional border for style */
 }
 
