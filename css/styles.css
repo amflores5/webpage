@@ -364,3 +364,55 @@ footer p{
     border: 4px solid var(--accent-color); /* Optional border for style */
 }
 
+/* Research Page Styling */
+.research-section {
+    padding: 120px 20px 60px;
+    background-color: #12130f;
+    color: #f0f0f0;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.research-section h2 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.research-category {
+    margin-top: 40px;
+}
+
+.research-category h3 {
+    font-size: 1.8rem;
+    color: var(--highlight-color);
+    margin-bottom: 15px;
+}
+
+.research-category ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+}
+
+.research-category ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.research-category ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.research-category ul li a:hover {
+    text-decoration: underline;
+}
+.research-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 20px;
+}
