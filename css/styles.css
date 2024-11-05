@@ -11,6 +11,7 @@
     --highlight-color: #621c62;
     --accent-color: #ffa500;
     --background-color-site: #050016;
+    --purple-secondary:#4b007f;
 }
 
 html, body{
@@ -255,13 +256,14 @@ footer p{
 .about-section {
     position: relative;
     padding: 120px 20px 60px;
-    background: linear-gradient(135deg, var(--primary-color), #4b007f, var(--highlight-color));
+    background: linear-gradient(135deg, var(--primary-color), var(--purple-secondary), var(--highlight-color));
     color: #f0f0f0;
     text-align: center;
     max-width: 800px;
     margin: auto;
     border-radius: 8px;
     overflow: hidden;
+    overflow-y: scroll;
 }
 
 /* General Circle Styling */
@@ -412,35 +414,67 @@ footer p{
         width: 100px; /* Small headshot for mobile */
     }
 }
-/* Research Page Styling */
+/* Research Section Styling */
 .research-section {
-    padding: 120px 20px 60px;
-    background-color: #12130f;
+    position: relative;
+    padding: 60px 20px;
     color: #f0f0f0;
     text-align: center;
-    max-width: 800px;
+    max-width: 100%;
     margin: auto;
+    background: linear-gradient(
+        rgba(58, 0, 83, 0.6), 
+        rgba(58, 0, 83, 0.6)
+    ), url('../images/working_image.jpg') no-repeat center center;
+    background-size: cover;
     border-radius: 8px;
+    overflow: hidden;
+    overflow-y: auto; /* Enable vertical scroll */
 }
 
+/* General Heading Styling */
 .research-section h2 {
     font-size: 2.5rem;
-    color: var(--accent-color);
+    color: var(--accent-color); 
     margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.research-section p{
+    font-size: 1.1rem;
+    color: #ddd; 
 }
 
+/* Research Categories Styling */
 .research-category {
     margin-top: 40px;
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: var(--background-color-site);
+    opacity:0.60;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .research-category h3 {
     font-size: 1.8rem;
-    color: var(--highlight-color);
+    color: var(--accent-color);
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
 }
 
+/* Icon Styling */
+.research-category h3 i {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+/* List Styling */
 .research-category ul {
-    list-style-type: none; /* Removes bullets */
+    list-style-type: none;
     padding: 0;
 }
 
@@ -458,11 +492,33 @@ footer p{
 .research-category ul li a:hover {
     text-decoration: underline;
 }
-.research-section p {
-    font-size: 1.1rem;
-    line-height: 1.8;
+
+/* Paragraph Styling */
+.research-category p, .research-category ul li {
     color: #ddd;
-    margin-bottom: 20px;
+    font-size: 1.0rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.research-category p a{
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-size: 1.0rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .research-section h2 {
+        font-size: 2rem;
+    }
+    
+    .research-category h3 {
+        font-size: 1.6rem;
+    }
+    
+    .research-category ul li {
+        font-size: 1rem;
+    }
 }
 
 
@@ -470,9 +526,8 @@ footer p{
 /* New-Page Styling*/
 /* News Page Background and Decorations */
 .news-page {
-    background: linear-gradient(135deg, var(--primary-color), var(--highlight-color)); /* Gradient background */
+    background: linear-gradient(135deg, var(--primary-color), var(--purple-secondary), var(--highlight-color)); /* Gradient background */
     position: relative;
-    max-height: 80vh; /* Limits height */
     overflow-y: scroll; /* Forces scrollbar */
 }
 
@@ -528,7 +583,7 @@ footer p{
     background-color: rgba(0, 0, 0, 0.6);
     color: #f0f0f0;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
@@ -627,6 +682,10 @@ footer p{
     }
     .image-container img {
         max-width: 100%; /* Full width for smaller screens */
+    }
+    .image-container img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+        z-index: 1;
     }
 }
 .ppt-container {
