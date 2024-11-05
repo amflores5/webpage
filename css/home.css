@@ -41,3 +41,12 @@
     color: #f0f0f0;
     margin-bottom: 20px;
 }
+/*Responsive Hero Section*/
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Slightly smaller heading on mobile */
+    }
+    .hero p {
+        font-size: 1rem; /* Slightly smaller paragraph on mobile */
+    }
+}

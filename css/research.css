@@ -7,8 +7,9 @@
     max-width: 100%;
     margin: auto;
     background: linear-gradient(
-        rgba(58, 0, 83, 0.6), 
-        rgba(58, 0, 83, 0.6)
+        to bottom,
+        rgba(58, 0, 83, 0.4), /* Start with a more transparent purple hue */
+        rgba(58, 0, 83, 0.8) /* Darker purple towards the bottom */
     ), url('../images/working_image.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 8px;
@@ -17,37 +18,28 @@
 }
 
 /* General Heading Styling */
-.research-section h2 {
-    font-size: 2.5rem;
-    color: var(--accent-color); 
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+.research-section h2,
+.research-category h3 {
+    color: var(--accent-color); /* Keep accent color for better contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow for readability */
 }
 .research-section p{
     font-size: 1.1rem;
     color: #ddd; 
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 50px;
 }
 
 /* Research Categories Styling */
 .research-category {
-    margin-top: 40px;
-    text-align: left;
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: var(--background-color-site);
-    opacity:0.60;
+    margin-top: 60px; /* Increase this value to push content lower */
+    background-color: rgba(0, 0, 0, 0.6); /* Darken content background for contrast */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.research-category h3 {
-    font-size: 1.8rem;
-    color: var(--accent-color);
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Space between icon and text */
+    opacity: 0.9; /* Increase to make background darker for better readability */
 }
 
 /* Icon Styling */

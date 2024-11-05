@@ -123,7 +123,8 @@ footer p{
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
-    margin-right: 20px;
+    margin-left:auto;
+    margin-right: 60px;
 }
 .hamburger span{
     display:block;
@@ -142,9 +143,28 @@ footer p{
 .navbar.active .hamburger span:nth-child(3) {
     transform: rotate(-45deg) translateY(-8px);
 }
-
+.social-media {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    color: var(--accent-color)
+}
+.social-media a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-media a:hover {
+    color: var(--accent-color); /* Hover color for social media icons */
+}
 /* Responsive Navbar */
 @media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show hamburger icon on mobile */
+        z-index: 1;
+    }
     .navbar nav {
         display:none;
     }
@@ -161,41 +181,13 @@ footer p{
         top: 48px; /* Adjust based on navbar height */
         right: 0;
         background-color: var(--secondary-color); /* Dark background for dropdown */
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
         width: 100%;
-        padding: 20px 0;
+        padding: 20px 0px;
         text-align: center;
     }
     .navbar.active nav ul li:last-child{
-        margin-right: 0px;
-    }
-    .hamburger {
-        display: flex; /* Show hamburger icon on mobile */
-    }
-}
-.social-media {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 20px;
-}
-.social-media a {
-    color: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-.social-media a:hover {
-    color: var(--accent-color); /* Hover color for social media icons */
-}
-
-/*Responsive Hero Section*/
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem; /* Slightly smaller heading on mobile */
-    }
-    .hero p {
-        font-size: 1rem; /* Slightly smaller paragraph on mobile */
+        margin-right: 10px;
     }
     .social-media a {
         font-size: 1.2rem; /* Slightly smaller icons on mobile */
