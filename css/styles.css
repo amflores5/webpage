@@ -5,13 +5,12 @@
 
 */
 
-/*Navigation Bar Styling*/
 :root{
-    --primary-color: #508ca4;
-    --secondary-color: #ad9baa;
-    --highlight-color: #912f56;
-    --accent-color: #c6d8af;
-    --background-color-site: #12130f;
+    --primary-color: #350060;
+    --secondary-color: #100037;
+    --highlight-color: #621c62;
+    --accent-color: #ffa500;
+    --background-color-site: #050016;
 }
 body{
     margin:0;
