@@ -5,12 +5,12 @@
     color: #f0f0f0;
     text-align: center;
     max-width: 100%;
-    margin: auto;
+    margin: 0;
     background: linear-gradient(
         to bottom,
-        rgba(58, 0, 83, 0.4), /* Start with a more transparent purple hue */
-        rgba(58, 0, 83, 0.8) /* Darker purple towards the bottom */
-    ), url('../images/working_image.jpg') no-repeat center center;
+        rgba(129, 1, 184, 0.4), /* Start with a more transparent purple hue */
+        rgba(113, 7, 158, 0.8) /* Darker purple towards the bottom */
+        ),url('../images/working_purple_hue.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 8px;
     overflow: hidden;
