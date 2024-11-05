@@ -1,0 +1,163 @@
+/*About Section Formatting*/
+/* About Section Styles */
+.about-section {
+    position: relative;
+    padding: 120px 20px 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--purple-secondary), var(--highlight-color));
+    color: #f0f0f0;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/* General Circle Styling */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05); /* Light, subtle color */
+    animation: float 15s infinite ease-in-out;
+    z-index: 0; /* Keep circles behind content */
+}
+
+/* Specific Circles with Different Sizes and Positions */
+.circle1 {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 20%;
+    animation-duration: 12s; /* Varying speed */
+}
+
+.circle2 {
+    width: 150px;
+    height: 150px;
+    top: 30%;
+    left: 70%;
+    animation-duration: 18s;
+}
+
+.circle3 {
+    width: 120px;
+    height: 120px;
+    bottom: 15%;
+    left: 10%;
+    animation-duration: 20s;
+}
+
+/* Original Circles */
+.about-section::before,
+.about-section::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    animation: float 10s infinite ease-in-out;
+}
+
+.about-section::before {
+    width: 120px;
+    height: 120px;
+    top: 0;
+    left: -60px;
+}
+
+.about-section::after {
+    width: 180px;
+    height: 180px;
+    bottom: 0;
+    right: -60px;
+}
+
+/* Float Animation */
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(10px, -20px); /* Diagonal movement */
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-section h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Headshot Image Styling */
+.headshot {
+    width: 400px; /* Adjust size as needed */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 50%; /* Circular crop */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 4px solid var(--accent-color); /* Optional border for style */
+}
+/*Responsive About Section*/
+@media (max-width: 768px) {
+    .about-section {
+        padding: 80px 15px 40px;
+    }
+
+    .about-section h2 {
+        font-size: 2rem; /* Smaller font for headings */
+    }
+
+    .about-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 1.1rem; /* Slightly smaller font for paragraphs */
+        line-height: 1.5;
+    }
+
+    .headshot {
+        width: 120px; /* Smaller headshot */
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .about-section {
+        padding: 60px 10px 30px;
+    }
+
+    .about-section h2 {
+        font-size: 1.8rem; /* Smaller font for mobile */
+    }
+
+    .about-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-section p {
+        font-size: 1rem; /* Smaller font for paragraphs */
+        line-height: 1.4;
+    }
+
+    .headshot {
+        width: 100px; /* Small headshot for mobile */
+    }
+}

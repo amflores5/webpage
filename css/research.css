@@ -1,0 +1,106 @@
+/* Research Section Styling */
+.research-section {
+    position: relative;
+    padding: 60px 20px;
+    color: #f0f0f0;
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+    background: linear-gradient(
+        rgba(58, 0, 83, 0.6), 
+        rgba(58, 0, 83, 0.6)
+    ), url('../images/working_image.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    overflow: hidden;
+    overflow-y: auto; /* Enable vertical scroll */
+}
+
+/* General Heading Styling */
+.research-section h2 {
+    font-size: 2.5rem;
+    color: var(--accent-color); 
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.research-section p{
+    font-size: 1.1rem;
+    color: #ddd; 
+}
+
+/* Research Categories Styling */
+.research-category {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: var(--background-color-site);
+    opacity:0.60;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.research-category h3 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+}
+
+/* Icon Styling */
+.research-category h3 i {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+/* List Styling */
+.research-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.research-category ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.research-category ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.research-category ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraph Styling */
+.research-category p, .research-category ul li {
+    color: #ddd;
+    font-size: 1.0rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.research-category p a{
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-size: 1.0rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .research-section h2 {
+        font-size: 2rem;
+    }
+    
+    .research-category h3 {
+        font-size: 1.6rem;
+    }
+    
+    .research-category ul li {
+        font-size: 1rem;
+    }
+}
