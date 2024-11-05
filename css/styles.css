@@ -12,13 +12,32 @@
     --accent-color: #ffa500;
     --background-color-site: #050016;
 }
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
 body{
+    display: flex;
+    flex-direction: column;
     margin:0;
     padding:0;
     background-color: var(--background-color-site);
     outline: none !important;
 }
-
+footer {
+    margin-top: auto;
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    color:#ffa500;
+}
 /*Navigation Bar Styling*/
 .navbar {
     position: fixed; 
