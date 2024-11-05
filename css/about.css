@@ -6,82 +6,11 @@
     background: linear-gradient(135deg, var(--primary-color), var(--purple-secondary), var(--highlight-color));
     color: #f0f0f0;
     text-align: center;
-    max-width: 800px;
-    margin: auto;
+    max-width: 800;
+    margin-bottom: auto;
     border-radius: 8px;
     overflow: hidden;
     overflow-y: scroll;
-}
-
-/* General Circle Styling */
-.circle {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05); /* Light, subtle color */
-    animation: float 15s infinite ease-in-out;
-    z-index: 0; /* Keep circles behind content */
-}
-
-/* Specific Circles with Different Sizes and Positions */
-.circle1 {
-    width: 100px;
-    height: 100px;
-    top: 10%;
-    left: 20%;
-    animation-duration: 12s; /* Varying speed */
-}
-
-.circle2 {
-    width: 150px;
-    height: 150px;
-    top: 30%;
-    left: 70%;
-    animation-duration: 18s;
-}
-
-.circle3 {
-    width: 120px;
-    height: 120px;
-    bottom: 15%;
-    left: 10%;
-    animation-duration: 20s;
-}
-
-/* Original Circles */
-.about-section::before,
-.about-section::after {
-    content: "";
-    position: absolute;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 50%;
-    animation: float 10s infinite ease-in-out;
-}
-
-.about-section::before {
-    width: 120px;
-    height: 120px;
-    top: 0;
-    left: -60px;
-}
-
-.about-section::after {
-    width: 180px;
-    height: 180px;
-    bottom: 0;
-    right: -60px;
-}
-
-/* Float Animation */
-@keyframes float {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(10px, -20px); /* Diagonal movement */
-    }
-    100% {
-        transform: translate(0, 0);
-    }
 }
 
 .about-section h2 {
@@ -118,6 +47,7 @@
 @media (max-width: 768px) {
     .about-section {
         padding: 80px 15px 40px;
+        margin: 0;
     }
 
     .about-section h2 {
@@ -134,7 +64,7 @@
     }
 
     .headshot {
-        width: 120px; /* Smaller headshot */
+        width: 50%; /* Smaller headshot */
         margin-top: 10px;
         margin-bottom: 15px;
     }
@@ -142,6 +72,7 @@
 @media (max-width: 480px) {
     .about-section {
         padding: 60px 10px 30px;
+        margin: 0;
     }
 
     .about-section h2 {
@@ -158,6 +89,6 @@
     }
 
     .headshot {
-        width: 100px; /* Small headshot for mobile */
+        width: 50%; /* Small headshot for mobile */
     }
 }

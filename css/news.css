@@ -1,11 +1,13 @@
 /* New-Page Styling*/
 /* News Page Background and Decorations */
 .news-page {
-    background: linear-gradient(135deg, var(--primary-color), var(--purple-secondary), var(--highlight-color)); /* Gradient background */
+    background: url('../images/news_background.jpg') no-repeat center center fixed; /* Replace with your actual image path */
+    background-size: cover;
+    color: #f0f0f0;
     position: relative;
+    padding: 60px 20px;
     overflow-y: scroll; /* Forces scrollbar */
 }
-
 .news-page::before,
 .news-page::after {
     content: "";
@@ -39,6 +41,7 @@
 .timeline {
     position: relative;
     padding-left: 30px;
+    padding-right: 30px;
 }
 
 .timeline::before {
