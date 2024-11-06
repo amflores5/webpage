@@ -30,40 +30,143 @@
     <!-- Research Content -->
     <section class="research-section">
         <h2>My Research</h2>
-        <p>Welcome to my research page! Here you’ll find details about my publications and my on going journey through my Ph.D.</p>
+        <p> Welcome to my research page! <br><br>
+            I started researching with Dr. Ananya Sen Gupta during my undergrad. As an undergrad researcher
+            I worked on multiple projects and gained insight on using MATLAB as a signal processing tool as well
+            as revising research documents. My work included breaking down a complex algorithm used to analyze oil
+            weathering from the Deep Water Horizon Oil Spill
+            <br><br> I continued my education and focused on signal processing for chemicals contained in milk samples, 
+            working along side the FDA. I learned about multiple techniques, such as using peak energies to quantify a 
+            signal to implement a comparison algorithm, finding items relative to one another, Principal Component Analysis, 
+            and K-Means Clustering. The goal of this research was to find analytes that appear in multiple samples that may 
+            need to be targeted. 
+            <br><br> 
+            My current reserach pivoted to a new domain in space physics. I now help scientists in heliophysics that 
+            analyze phenomena like space weather, trying to give them the most reliable data. To study these phenomena,
+            magnetometers are flown into space. The spacecraft they are on also has its own magnetic field and
+            can impact the data. 
+            <br><br>
+            I enjoy the interdisciplinary work that I can be apart of and hope to continue to learn more about the complexities of 
+            how information evolves in complicated systems, such as the human body, specifically the brain.
+        </p>
     
         <!-- Publications Section -->
         <div class="research-category">
             <h3><i class="fa fa-book"></i> Publications</h3>
-            <ul>
-                <li><a href="path/to/publication1.pdf" target="_blank">Title of Publication 1</a> - Brief description or summary.</li>
-                <li><a href="path/to/publication2.pdf" target="_blank">Two Dimensional GCxGC-ToF-MS</a> - Brief description or summary.</li>
+            <ul class ="projects">
+                <li><a href="embed/enabling_in_situ_validation.pdf" target="_blank"><strong>Enabling in situ validation of mitigation algorithms for magnetic
+                    interference via a laboratory-generated dataset</strong></a> <br>As a coauthor of this paper I worked on some writing, generating the figures, and 
+                    uploading the data repository on the Iowa Reserach Online portal. The dataset and code generated from this dataset can give magnetic interference
+                    researchs a dataset where we can validate our algorithms as we know what is geophysical vs interference in the data itself. This is useful as when 
+                    we perform the algorithms for the satellites there is no way to know what the ground truth of the satellite signature is. This dataset provides 
+                    researchers with ground truth data, enhancing algorithm performance. 
+                </li>
+                <li><a href="embed/ThesisAfterSubmission2022Revised.pdf" target="_blank"><strong>Two-dimensional gas chromatography time-of-flight mass spectrometry (GCxGC-ToF-MS) data 
+                    analysis for identifying unknown persistent organic pollutants in milk samples:</strong></a> <br> My MS thesis dealt with analyzing chemical 
+                    compounds in a large data repository using a GCxGC-ToF-MS instrument. The main points from this work includes an algorithm that can compares 
+                    two mass spectra together to find matches, as well as utilizing proprerties of the data run itself to find location compounds worthy of comparison. The <strong>FDA</strong>
+                    targets specific analytes that may cause harm to humans. However to identify which     
+                </li>
             </ul>
         </div>
     
         <!-- Projects Section -->
         <div class="research-category">
             <h3><i class="fa fa-folder-open"></i> Projects</h3>
-            <ul>
-                <li><strong>Project Title 1:</strong> Brief description of the project. Link to additional resources if available.</li>
-                <li><strong>Project Title 2:</strong> Brief description of the project. Link to additional resources if available.</li>
-            </ul>
+            <ul class="projects">
+                <li><strong>TRACERS:</strong> <br>I am apart of the graduate team that is working for the TRACERS mission led by Dr. David Miles.
+                I have been apart in the magnetic screening process, ensuring that the magnetometers onboard the two satellites will not be
+                greatly impacted by the magnetic field generated from the spacecraft. My current research deals with mitigating the noise
+                generated by the spacecraft by creating an algorithm that can isolate and remove the information. Click for more information about
+                <a href="https://tracers.physics.uiowa.edu/" target="_blank">TRACERS</a> 
+                </li>
+                <li><strong>E-POP/Swarm-Echo:</strong> <br>This mission is where most of my algorithm development takes place. The satellite used
+                    in this mission has large traces of interference due to the attitude control systems managed by reaction wheels. Keeping in 
+                    mind the frequencies that the reaction wheels spin at, we can track the location in the time-frequency domain in which the 
+                    satellite created. For my dissertation proposal, most of the data that I will be working with will be from this satellite. Click 
+                    for more informatin about <a href="https://epop.phys.ucalgary.ca/" target="_blank">E-POP/Swarm-Echo</a>
+                </li>
+                <li><strong>Other Missions:</strong> <br>There is interest in making the algorithm applicable to any satellite. To ensure that this 
+                    is true, data from Parker Solar Probe, GOES Satellites, and other missions may also be utilized to learn what features and 
+                    techniques is best applicable for all spacecrafts. 
+                </li>
         </div>
     
         <!-- Conference Section -->
         <div class="research-category">
             <h3><i class="fa fa-trophy"></i> Conference</h3>
-            <ul>
-                <li><strong>Poster Presentation:</strong> Brief description of the project. Link to additional resources if available.</li>
-                <li><strong>Poster Presentation:</strong> Brief description of the project. Link to additional resources if available.</li>    
+            <ul class = "projects">
+                <li><strong>Reaction Wheel Interference Mitigation within Magnetometer Data Utilizing Harmonic Structures:</strong>
+                    <br><b>Allison Flores, Ananya Sen Gupta, David Miles</b>
+                    <br>
+                    <i>AGU Fall Meeting 2024</i>
+                    <br>Missions focused on space weather require magnetic field measurements. 
+                    Satellite subsystems can emit their own magnetic field, 
+                    interfering with the data. One such subsystem includes reaction wheels, 
+                    which are commonly used for attitude control. The CASSIOPE/SwarmEcho satellite 
+                    is a perfect example where the time-varying reaction wheel 
+                    noise overlays the target geophysical signals. Typically, Ness-gradiometry 
+                    is utilized where the difference between the two vector magnetometers at 
+                    different distances from the spacecraft gives an estimate of the noise 
+                    that can be subtracted. With shorter booms, the sensors experience a 
+                    more complex multi-pole noise source necessitating additional signal 
+                    processing to mitigate. We explore analyzing the signal in the frequency    
+                    domain, where the fundamental and harmonics signatures of the reaction    
+                    wheels are targeted and removed. We present our findings using data 
+                    collected from the CASSIOPE/Swarm-Echo satellite as a case study
+                </li>
+                <li><strong>Mitigating Magnetic Interference in Space Science Missions: A Case Study of Feature Separation Techniques:</strong>
+                    <br><b>Allison Flores, Ananya Sen Gupta, David Miles</b>
+                    <br>
+                    <i>Hesto Conference</i>
+                    <br>Space science missions seeking to take magnetic field measurements are susceptible to local magnetic 
+                    interference from common for satellite subsystems, including reaction wheels, magnetorquers, solar panels, 
+                    etc. Magnetic screening and other characterization tests help in identifying sources of interference and, 
+                    in some cases, mitigating them by design. Historical algorithms, such as the Ness technique, are reasonably
+                    effective at removing some magnetic sources and preserving the geophysical field. However, complex and 
+                    time-varying magnetic interference has been a significant challenge and in recent years, multiple algorithms
+                     have been developed with the goal of mitigating complex the interference signals. Here, we present a case 
+                     study of our method, in which we perform feature separation of reaction wheels by utilizing information from 
+                     two vector magnetometers along a boom. In particular, we present results from the e-POP/Swarm-Echo mission. 
+                     We also discuss how the presented methodology is broadly applicable beyond the e-POP mission and the specific 
+                     application used in this case study.
+                </li> 
+                <div class = "ppt-container">
+                    <iframe 
+                        src="https://1drv.ms/p/c/1cb6169bb726c447/IQRlZu1LktH_QYMEi4HKphOjAUNeCNtYZtvacea69sOdUcE?em=2&amp;wdAr=1.7777777777777777" 
+                        width="100%" 
+                        height="400px" 
+                        frameborder="0">This is an embedded 
+                    </iframe>             
+                </div>
+                <li><strong>Mitigation of reaction wheel interference and other noise sources in spacecraft using remote sensing and laboratory-generated data:</strong>
+                    <br><b>Allison Flores, Matthew Finley, Ananya Sen Gupta, David Miles</b>
+                    <br>
+                    <i>AGU Fall Meeting 2023</i>
+                    <br>Magnetic interference mitigation for onboard spacecraft instruments is paramount for accurate geophysical 
+                    magnetometer data. It is an active research area to separate the interference signal caused by the spacecraft 
+                    from the geophysical background signal. We address this challenge using signal processing techniques employed 
+                    across both the time and frequency domains. A case study of our algorithm, focusing on topological connectivity
+                    in the spectral domain, has been performed on e-POP/Swarm-Echo mission. However, there is no proper way to evaluate
+                    whether the algorithm maintained the geophysical signal correctly. A new laboratory-generated dataset that mimics
+                    noise sources, like the reaction wheel, has been created at the University of Iowa and further developed at 
+                    Goddard. We will present how our algorithm performed in multiple scenarios where the noise source signature and
+                    simulated geophysical signature are known. From there, we determine the limitations of our algorithm and pinpoint
+                    specific examples that may be of interest to noise mitigation developers. This work was support in part by US 
+                    Airforce Office of Scientific Research grant FA9550-21-1-0206. The e-POP/Swarm-Echo mission is supported by 
+                    the European Space Agency's Third Party Mission Programme. e-POP/Swarm-Echo data are available at 
+                    https://epopdata.phys.ucalgary.ca/ 
+                </li>   
+                <img src="images/agu_2023_poster.jpg" alt="AGU 2023 Poster Presentation">
             </ul>
         </div>
     
         <!-- Google Scholar Section -->
         <div class="research-category">
-            <h3><i class="fa fa-graduation-cap"></i> Google Scholar Profile</h3>
+            <h3><i class="fa fa-graduation-cap"></i> Scholar Profile Links </h3>
             <ul>
-                <li>Follow my publications on <a href="https://scholar.google.com/citations?user=AllisonFlores" target="_blank">Google Scholar</a>.</li>
+                <li>Follow my publications on <a href="https://scholar.google.com/citations?user=AllisonFlores" target="_blank">Google Scholar</a> 
+                    or check out my <a href="https://orcid.org/0009-0009-1797-6492" target="_blank"> ORCID ID</a></li>
             </ul>
         </div>
     </section>
