@@ -166,12 +166,12 @@ footer p{
         z-index: 1;
     }
     .navbar nav {
-        display:none;
+        display: none;
     }
     .nav-links {
         display: none; /* Hide links on smaller screens */
     }
-    .navbar.active nav{
+    .navbar.active nav {
         display: flex;
     }
     .navbar.active .nav-links {
@@ -179,20 +179,27 @@ footer p{
         flex-direction: column;
         position: absolute;
         top: 48px; /* Adjust based on navbar height */
-        right: 0;
-        background-color: var(--secondary-color); /* Dark background for dropdown */
+        left: 45%;
+        transform: translateX(-50%); /* Center the menu horizontally */
         background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
         width: 100%;
-        padding: 20px 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         text-align: center;
     }
-    .navbar.active nav ul li:last-child{
-        margin-right: 10px;
+    .navbar.active nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar.active nav ul li {
+        list-style: none;
+        margin: 10px 0; /* Add space between items */
     }
     .social-media a {
         font-size: 1.2rem; /* Slightly smaller icons on mobile */
     }
 }
+
 
 /*Scroll Wheels*/
 /* Hide scrollbars on the about and research sections */
